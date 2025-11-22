@@ -7,21 +7,17 @@ using System.Xml.Linq;
 
 namespace DoHuyAn_BTVN_02
 {
-    internal class Student
+    public class Student
     {
-        public int studentID { get; set; }
-        public string fullName { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public int Age { get; set; }
-        public Student(int studentID, string fullname, int Age) 
+
+        public Student(int id, string name, int age)
         {
-            this.studentID = studentID;
-            this.fullName = fullname;
-            this.Age = Age;
-        }
-        public override string ToString()
-        {
-            return $"ID: {Id}, Tên: {Name}, Tuổi: {Age}";
+            Id = id;
+            Name = name;
+            Age = age;
         }
     }
-}
 }
